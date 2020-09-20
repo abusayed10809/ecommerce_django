@@ -26,7 +26,7 @@ SECRET_KEY = 'q@))u5wg7vhei^dszr=w$3g8@jv(-*2iol^^_^r5nnmp7u-6a4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mellow-shop.herokuapp.com']
 
 
 # Application definition
