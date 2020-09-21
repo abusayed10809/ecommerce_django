@@ -6,12 +6,13 @@
 }
 
 .container{
+	width: 100%;
+	margin: 70px auto;
 	position: relative;
-	margin-top: 70px;
 }
 
 body{
-	background-color: hsl(0, 0%, 95%);
+	background-color: hsl(0, 0%, 93%);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -21,7 +22,7 @@ h1,h2,h3,h4,h5,h6{
 .box-element{
 	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
 	background-color: rgb(255, 255, 255);
-	border-radius: 4px;
+	border-radius: 8px;
 	padding: 10px;
 }
 
@@ -39,7 +40,7 @@ h1,h2,h3,h4,h5,h6{
 
 .bg-dark{
 	/* background-color: #4f868c!important; */
-	background-color: darkslateblue;
+	background-color: #330f66!important;
 }
 
 #cart-icon{
@@ -93,15 +94,12 @@ h1,h2,h3,h4,h5,h6{
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ececec;
-
 }
 
 .quantity{
 	display: inline-block;
 	font-weight: 700;
 	padding-right:10px;
-	
-
 }
 
 .chg-quantity{
@@ -113,10 +111,27 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .chg-quantity:hover{
-	opacity: .6;
+	opacity: 10;
 }
 
 
-.hidden{
+/* .hidden{
 	display: none!important;
+} */
+
+.card-shadow{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+	background-color: #ffffff;
+}
+
+.card{
+	float: left;
+	width: 18rem;
+	padding: 0 10px;
+	margin: 20px;
+}
+
+.card-rows{
+	width: 100%;
+	margin: 10px;
 }

@@ -8,9 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Mellow-Shop</title>
+
 <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+    <!-- <style>
+        .bg-dark {
+          background-color: #330f66!important;
+        }
+    </style> -->
 
 </head>
 <body>
@@ -21,7 +30,12 @@
         <!-- <ul class="d-none navbar-nav mr-auto">
             
         </ul> -->
-    
+        <div class="form-inline my-2 my-lg-0">
+            <a href="{% url 'cart' %}">
+                <img id="cart-icon" src="{% static 'images/cart.png' %}">
+            </a>
+            <p id="cart-total">0</p>
+        </div>
     </nav>
 
     <div class="container">
