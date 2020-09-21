@@ -10,8 +10,8 @@
     <title>Mellow-Shop</title>
 
 <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
+    <!-- integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
  
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
@@ -24,19 +24,26 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="{% url 'store' %}">Mellow</a>
         
-        <!-- <ul class="d-none navbar-nav mr-auto">
-            
-        </ul> -->
         <div class="form-inline my-2 my-lg-0">
             <a href="{% url 'cart' %}">
                 <img id="cart-icon" src="{% static 'images/cart.png' %}">
             </a>
             <p id="cart-total">0</p>
         </div>
-    </nav>
+    </nav> -->
+
+    <div class="my-nav">
+        <a id="store" href="{% url 'store' %}">Mellow</a>
+        <div class="cart">
+            <a href="{% url 'cart' %}">
+                <img id="cart-image" src="{% static 'images/cart.png' %}">
+            </a>
+            <p id="cart-total">0</p>
+        </div>
+    </div>
 
     <div class="container">
         {% block content %}

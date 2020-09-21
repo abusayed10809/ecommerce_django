@@ -1,4 +1,4 @@
-.navbar{
+/* .navbar{
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .bg-dark{
-	/* background-color: #4f868c!important; */
+	background-color: #4f868c!important;
 	background-color: #330f66!important;
 }
 
@@ -117,7 +117,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* .hidden{
 	display: none!important;
-} */
+} 
 
 .card-shadow{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
@@ -134,4 +134,138 @@ h1,h2,h3,h4,h5,h6{
 .card-rows{
 	width: 100%;
 	margin: 10px;
+} */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
 }
+
+.my-nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	overflow: hidden;
+
+	margin: 0 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #3d0caf;
+}
+
+.container{
+	margin-top: 80px;
+	background-color: hsl(0,0,93%)
+}
+
+#store{
+	color: floralwhite;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 24px;
+	margin-left: 25px;
+}
+.cart{
+	display: flex;
+}
+#cart-image{
+	width: 35px;
+	height: 35px;
+	margin-right: -5px;
+}
+#cart-total{
+	background-color: red;
+	color: white;
+	text-align: center;
+	border-radius: 50%;
+	width: 25px;
+	height: 20px;
+	display: block;
+	margin-right: 25px;
+}
+
+/* store css */
+
+.card-row{
+	display: flex;
+	flex-direction: row;
+	/* justify-content: space-around;
+	justify-content: space-between; */
+	flex-flow: wrap;
+	margin: 20px 10%;
+}
+
+.card{
+	width: 20%;
+	height: 100%;
+	padding: 10px;
+	background: hsl(0,0,100%);
+	border: 1px solid #3d0caf;
+	border-radius: 10px;
+	margin: 20px;
+	transition: 0.3s;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.card-image{
+	height: 70%;
+	width: 80%;
+}
+
+.card-body{
+	margin: 0 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-title{
+	margin-top: 20px;
+}
+
+/* .card-description{
+	margin: 5px;
+} */
+
+.card-button-price{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card-button{
+	text-decoration: none;
+	border: 1px solid #3d0caf;
+	text-align: center;
+	background: #450dc7;
+	color: #ffffff;
+	padding: 5px;
+}
+
+.card-button:hover{
+	background: #280774;
+}
+
+.card-price{
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1000px){
+	.card{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.container {
+	  width: 100%;
+	}
+  
+	.card {
+	  width: 80%;
+	}
+  }
