@@ -1,5 +1,47 @@
 {% extends "store/main.html" %}
-
+{% load static %}
 {% block content %}
-hellow
+
+    <div class="cart-page-body">
+        
+        <div class="card-checkout">
+            
+            <div class="continue-shopping">
+                <a class="continue-shopping-button" href="{% url 'store' %}">Continue Shopping</a>
+            </div>
+            <div class="card-total-checkout">
+                <h2 class="cart-total-text">Total: Tk. 5000</h2>
+                <a class="checkout-button" href="{% url 'checkout' %}">Checkout</a>
+            </div>
+
+        </div>
+
+        <div class="card-cart-items">
+            <div class="cart-info-name">
+                <h3>Product</h3>
+                <h3>Name</h3>
+                <h3>Price</h3>
+                <h3>Quantity</h3>
+                <h3>Total</h3>
+            </div>
+        
+            <div class="cart-item-info">
+                
+                <img class="product-image-small" src="{% static 'images/cart.png' %}">
+                <h3>Coffee</h3>
+                <h3>Tk. 400</h3>
+                
+                <div class="cart-item-quantity">
+                    <h3>12</h3>
+                    <div class="cart-item-quantity-icon">
+                        <img class="quantity-icon" src="{% static 'images/cart.png' %}">
+                        <img class="quantity-icon" src="{% static 'images/cart.png' %}">
+                    </div>
+                </div>
+                
+                 <h3>Tk. 1400</h3>
+            </div>
+        </div>
+    </div>  
+
 {% endblock %}

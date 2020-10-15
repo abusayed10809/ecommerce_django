@@ -189,7 +189,12 @@ h1,h2,h3,h4,h5,h6{
 	margin-right: 25px;
 }
 
-/* store css */
+/*  
+	this part 
+	is for 
+	store.css 
+*/
+
 
 .card-row{
 	display: flex;
@@ -227,10 +232,6 @@ h1,h2,h3,h4,h5,h6{
 	margin-top: 20px;
 }
 
-/* .card-description{
-	margin: 5px;
-} */
-
 .card-button-price{
 	display: flex;
 	flex-direction: column;
@@ -241,7 +242,7 @@ h1,h2,h3,h4,h5,h6{
 	text-decoration: none;
 	border: 1px solid #3d0caf;
 	text-align: center;
-	background: #450dc7;
+	background: #3d0caf;
 	color: #ffffff;
 	padding: 5px;
 }
@@ -258,6 +259,9 @@ h1,h2,h3,h4,h5,h6{
 	.card{
 		width: 40%;
 	}
+	.cart-page-body{
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 620px) {
@@ -268,4 +272,97 @@ h1,h2,h3,h4,h5,h6{
 	.card {
 	  width: 80%;
 	}
-  }
+}
+
+/*  
+	this part 
+	is for 
+	cart.css 
+*/
+
+.cart-page-body{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+  
+.card-checkout{
+	border: 1px solid #000000;
+	background: #ffffff;
+	width: 100%;
+	margin: 20px auto;
+}
+
+.card-cart-items{
+	border: 1px solid #000000;
+	background: #ffffff;
+	width: 100%;
+	margin: 20px auto;
+}
+
+.card-checkout{
+}
+
+.continue-shopping{
+	margin: 20px 20px;
+	background: #ffffff;
+}
+.continue-shopping-button{
+	text-decoration: none;
+	color: #ffffff;
+	background: #3d0caf;
+	font-size: 1.5rem;
+	padding: 5px;
+}
+
+.continue-shopping-button:hover{
+	background: #280774;
+}
+
+.card-total-checkout{
+	margin: 50px 20px 20px 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.checkout-button{
+	text-decoration: none;
+	color: #ffffff;
+	background: #3d0caf;
+	font-size: 1.5rem;
+	padding: 5px;
+}
+
+.cart-info-name{
+	display: flex;
+	justify-content: space-between;
+}
+
+.cart-item-info{
+	display: flex;
+	margin: 10px 0px;
+	justify-content: space-between;
+}
+
+.product-image-small{
+	width: 50px;
+	height: 70px;
+}
+
+.quantity-icon{
+	width: 10px;
+	height: 10px;
+}
+
+@media screen and (max-width: 1000px){
+	.cart-page-body{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.cart-page-body{
+		width: 90%;
+	}
+}
